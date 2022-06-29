@@ -137,10 +137,13 @@ path {
   width: 200px;
   height: 250px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-weight: 200;
   font-size: 1.2vw;
