@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+* {
+  --primary1: #48A0D8;
+  --primary2: #705CA6;
+  --primary3: #C2328B;
+  --primary1Hover: #1e5fc0;
+  --primary2Hover: #5A4494;
+  --primary3Hover: #A42B76; 
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+} 
+
+.content {
+  width: 100%;
+  height: auto;
+  background: radial-gradient(ellipse at top right, var(--primary3) 29%, transparent),
+  radial-gradient(circle at top, transparent, var(--primary1) 1%),
+  radial-gradient(circle at bottom right, transparent, var(--primary1Hover));
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.wave {
+  width: 90%;
+  overflow: hidden;
+}
+
+svg {
+  width: 100%;
+}
+
+path {
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.text {
+  width: 45%;
+  height: 400px;
+  text-align: left;
+  font-weight: 900;
+  font-size: 3.8vw;
+  color: white;
+}
+
+strong {
+  background-color: #C2328B;
+  padding: 0px 10px 10px 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.factory-image {
+  width: 50%;
+  height: auto;
+}
+
+.text-image-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between !important;
+  flex-wrap: wrap-reverse;
+}
+
+.icon-selfSupply {
+  width: 100px;
+  align-self: flex-start;
+}
+
+
+
+
+/*media queries*/
+
+@media (max-width: 600px) {
+  .text-image-container {
+    flex-direction: column-reverse;
+    justify-content: center !important;
+  }
+}
