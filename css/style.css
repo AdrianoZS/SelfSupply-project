@@ -134,8 +134,8 @@ path {
 .container {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   border-radius: 10px;
 }
 
@@ -143,7 +143,7 @@ path {
   text-align: center;
   color: white;
   font-weight: 200;
-  font-size: 1.5vw;
+  font-size: 1vw;
   width: 100%;
   height: 40%;
   background-color: var(--primary3);
@@ -159,7 +159,7 @@ path {
 }
 
 .body-img {
-  width: 100px;
+  width: 80px;
 }
 
 /*media queries*/
