@@ -135,7 +135,7 @@ path {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 250px;
+  height: 220px;
   border-radius: 10px;
   background-color: white;
 }
