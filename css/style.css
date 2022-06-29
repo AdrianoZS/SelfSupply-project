@@ -20,8 +20,11 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 10px;
+  background-image: linear-gradient(to right, var(--primary3), var(--primary1));
+  width: 100%;
+  height: auto;
 }
 
 .align-center {
@@ -102,6 +105,7 @@ path {
 .icon-selfSupply {
   width: 90px;
   align-self: flex-start;
+  border-radius: 10px;
 }
 
 .secondary-text-container {
