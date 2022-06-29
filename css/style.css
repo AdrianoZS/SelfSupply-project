@@ -16,6 +16,14 @@ body {
   font-family: 'Fjalla One', sans-serif;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
 .align-center {
   align-items: center;
   justify-content: space-around;
@@ -92,7 +100,7 @@ path {
 }
 
 .icon-selfSupply {
-  width: 100px;
+  width: 90px;
   align-self: flex-start;
 }
 
