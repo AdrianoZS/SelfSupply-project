@@ -94,6 +94,14 @@ strong {
   align-self: flex-start;
 }
 
+.secondary-text-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .secondary-text {
   font-size: 16px;
   color: white;
