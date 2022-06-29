@@ -166,6 +166,10 @@ path {
   width: 80px;
 }
 
+#map-container-img {
+  width: 200px;
+}
+
 /*media queries*/
 
 @media (max-width: 600px) {
