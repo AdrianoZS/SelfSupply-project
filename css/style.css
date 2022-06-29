@@ -60,7 +60,7 @@ path {
   color: white;
 }
 
-strong {
+.strong {
   background-color: #C2328B;
   padding: 0px 10px 10px 5px;
   border-radius: 10px;
