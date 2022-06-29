@@ -94,7 +94,12 @@ strong {
   align-self: flex-start;
 }
 
-
+.secondary-text {
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
 
 
 /*media queries*/
