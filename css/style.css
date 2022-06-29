@@ -23,7 +23,6 @@ header {
   justify-content: space-around;
   padding: 10px;
   background-color: var(--primary1);
-  width: 100%;
   height: auto;
 }
 
