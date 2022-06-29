@@ -22,7 +22,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  background-image: linear-gradient(to left, var(--primary3), var(--primary1));
+  background-color: var(--primary1);
   width: 100%;
   height: auto;
 }
