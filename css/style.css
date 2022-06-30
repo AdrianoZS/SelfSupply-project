@@ -70,7 +70,7 @@ a:hover {
   width: 100%;
   height: auto;
   background: white;
-  border-bottom: 1px solid var(--primary1);
+  border-bottom: 1px solid var(--primary3);
 }
 
 .content1 {
