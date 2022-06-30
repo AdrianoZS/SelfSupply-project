@@ -37,7 +37,6 @@ function animate() {
   document.querySelector(".pathElement4").setAttribute("d", path);
   document.querySelector(".pathElement5").setAttribute("d", path);
   document.querySelector(".pathElement6").setAttribute("d", path);
-  document.querySelector(".pathElement7").setAttribute("d", path);
   t += 0.4
   
 }
