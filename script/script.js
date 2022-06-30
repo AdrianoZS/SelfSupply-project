@@ -31,14 +31,13 @@ function animate() {
     return p[0] + "," + p[1]
   }).join(" L")
 
-  document.querySelector(".pathElement").setAttribute("d", path)
-  document.querySelector(".pathElement2").setAttribute("d", path)
-  document.querySelector(".pathElement3").setAttribute("d", path)
-  document.querySelector(".pathElement4").setAttribute("d", path)
-  document.querySelector(".pathElement5").setAttribute("d", path)
-  document.querySelector(".pathElement6").setAttribute("d", path)
-
-
+  document.querySelector(".pathElement").setAttribute("d", path);
+  document.querySelector(".pathElement2").setAttribute("d", path);
+  document.querySelector(".pathElement3").setAttribute("d", path);
+  document.querySelector(".pathElement4").setAttribute("d", path);
+  document.querySelector(".pathElement5").setAttribute("d", path);
+  document.querySelector(".pathElement6").setAttribute("d", path);
+  document.querySelector(".pathElement7").setAttribute("d", path);
   t += 0.4
   
 }
