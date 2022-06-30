@@ -4,7 +4,7 @@
 * {
   --primary1: #48A0D8;
   --primary2: #705CA6;
-  --primary3: #C2328B;
+  --primary3: lightgray;
   --primary1Hover: #1e5fc0;
   --primary2Hover: #5A4494;
   --primary3Hover: #A42B76; 
@@ -69,9 +69,8 @@ a:hover {
 .content {
   width: 100%;
   height: auto;
-  background: radial-gradient(ellipse at top right, var(--primary3) 29%, transparent),
-  radial-gradient(circle at top, transparent, var(--primary1) 1%),
-  radial-gradient(circle at bottom right, transparent, var(--primary1Hover));
+  background: white;
+  border-bottom: 1px solid var(--primary1);
 }
 
 .content1 {
@@ -90,7 +89,7 @@ svg {
 }
 
 path {
-  stroke: white;
+  stroke: var(--primary1);
   stroke-width: 1px;
   stroke-linecap: round;
   fill: none;
@@ -102,11 +101,11 @@ path {
   text-align: left;
   font-weight: 900;
   font-size: 2.9vw;
-  color: white;
+  color: var(--primary3);
 }
 
 .strong {
-  background-color: #C2328B;
+  background-color: var(--primary1);
   padding: 0px 10px 10px 5px;
   border-radius: 10px;
   text-align: left;
@@ -184,6 +183,7 @@ path {
   height: 15vw;
   border-radius: 10px;
   background-color: white;
+  outline: 1px solid var(--primary1);
 }
 
 .header {
@@ -195,7 +195,7 @@ path {
   font-size: 1.2vw;
   width: 100%;
   height: 40%;
-  background-color: var(--primary3);
+  background-color: var(--primary1);
   border-radius: 10px;
   color: white;
 }
@@ -204,12 +204,13 @@ path {
   width: 100%;
   height: 60%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .body-img {
-  width: 80px;
+  width: 100px;
 }
 
 #map-container-img {
@@ -232,6 +233,7 @@ path {
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  outline: 1px solid var(--primary1);
   border-radius: 10px;
 }
 
@@ -274,6 +276,7 @@ path {
   flex-direction: row;
   border-radius: 10px;
   background-color: white;
+  outline: 1px solid var(--primary1);
 }
 
 .partners-name {
@@ -286,7 +289,7 @@ path {
   color: white;
   font-weight: 400;
   font-size: 1.4vw;
-  background-color: var(--primary3);
+  background-color: var(--primary1);
 }
 
 .partners-logos {
