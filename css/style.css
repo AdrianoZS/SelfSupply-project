@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 
 * {
-  --primary1: #48A0D8;
-  --primary2: #705CA6;
-  --primary3: lightgray;
-  --primary1Hover: #1e5fc0;
-  --primary2Hover: #5A4494;
-  --primary3Hover: #A42B76; 
+  --primary1: rgb(0, 174, 239);
+  --primary2: rgb(0, 0, 0);
+  --primary3: rgb(130, 130, 130);
+  --primary1Hover: rgb(255, 255, 255);
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+  font-weight: bold;
 }
 
 header {
@@ -54,6 +52,7 @@ a {
   font-size: 2vw;
   font-weight: 700;
   color: white;
+  transition: .6s;
 }
 
 a:hover {
@@ -100,12 +99,13 @@ path {
   height: 400px;
   text-align: left;
   font-weight: 900;
-  font-size: 2.9vw;
+  font-size: 2.6vw;
   color: var(--primary3);
 }
 
 .strong {
   background-color: var(--primary1);
+  color: var(--primary1Hover);
   padding: 0px 10px 10px 5px;
   border-radius: 10px;
   text-align: left;
@@ -122,7 +122,7 @@ path {
 }
 
 .factory-image {
-  width: 45%;
+  width: 42%;
   height: auto;
 }
 
@@ -138,6 +138,7 @@ path {
 .icon-selfSupply {
   width: 99px;
   border-radius: 10px;
+  border-radius: 50%;
 }
 
 .secondary-text-container {
@@ -153,7 +154,7 @@ path {
 
 .secondary-text {
   font-size: 2vw;
-  color: white;
+  color: var(--primary3);
   font-weight: 100;
   text-align: center;
 }
@@ -174,6 +175,7 @@ path {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -184,6 +186,7 @@ path {
   border-radius: 10px;
   background-color: white;
   outline: 1px solid var(--primary1);
+  font-size: 1.2vw;
 }
 
 .header {
@@ -192,7 +195,7 @@ path {
   justify-content: center;
   color: white;
   font-weight: 200;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   width: 100%;
   height: 40%;
   background-color: var(--primary1);
@@ -235,6 +238,7 @@ path {
   background-color: white;
   outline: 1px solid var(--primary1);
   border-radius: 10px;
+  font-size: 1.2vw;
 }
 
 .heading-simplus {
@@ -271,7 +275,7 @@ path {
 
 .partners {
   width: 100%;
-  height: 100px;
+  height: 9vw;
   display: flex;
   flex-direction: row;
   border-radius: 10px;
@@ -302,40 +306,136 @@ path {
   height: 100%;
 }
 
-.mensalidades-container {
+.contacts-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   width: 100%;
+  color: var(--primary3);
+}
+
+.contacts-name-container > div {
+  width: 24vw;
+  text-align: center;
+}
+
+.contacts-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacts-content > #phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-content > div, .contacts-content > #phone > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 24vw;
 }
 
-.mensalidades-items {
-  width: 18vw;
-  height: 19vw;
-  background-color: lightgrey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10px;
-}
-
-.gradient-two-colors {
-  background: linear-gradient(
-    to bottom,
-    var(--primary1Hover) 50%,
-    white 50%
-  ) !important;
-}
 
 
 /*media queries*/
 
-@media (max-width: 600px) {
-  .text-image-container {
-    flex-direction: column-reverse;
+@media (max-width: 1264px) {
+ .container, #simplus {
+    width: 180px;
+    height: 200px;
+ }
+}
+
+@media (max-width: 1024px) {
+  .big-container {
+    height: 320px !important;
+    width: 200px !important;
+ }
+}
+
+@media (max-width: 768px) {
+  #container-simplus {
+    flex-direction: column;
     justify-content: center !important;
+    gap: 10px;
+  }
+
+  .big-container {
+    font-size: 13px ;
+  }
+
+  .text-image-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  a {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    font-size: 13px;
+  }
+
+  .container, #simplus {
+    width: 120px;
+    height: 140px;
+  }
+
+ .body-img {
+   width: 60px;
+  }
+
+  .secondary-text-container {
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 600px) {
+  a {
+    font-size: 1.2rem;
+  }
+
+  .big-container {
+    font-size: 10px;
+    width: 150px !important;
+    height: 280px !important;
+  }
+
+  .icon-selfSupply {
+    width: 60px;
+  }
+
+  .header {
+    font-size: 3.2vw;
+  }
+
+  .secondary-text{
+    font-size: 1rem;
+  }
+
+  #strong  {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+
+  #simplus{
+    font-size: 10px;
+  }
+
+  .heading-simplus {
+    font-size: 12px;
   }
 }

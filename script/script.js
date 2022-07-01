@@ -7,7 +7,7 @@ if (webScreenWidth < 1300) {
     xs.push(i)
   }
 } else if (webScreenWidth < 1600) {
-  for (var i = 0; i <= 1450; i++) {
+  for (var i = 0; i <= 1750; i++) {
     xs.push(i)
   }
 } else {
@@ -41,4 +41,4 @@ function animate() {
   
 }
 
-animate()
+animate();
