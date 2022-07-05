@@ -124,6 +124,7 @@ path {
 .factory-image {
   width: 42%;
   height: auto;
+  min-width: 300px;
 }
 
 .text-image-container {
