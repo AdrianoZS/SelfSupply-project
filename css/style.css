@@ -439,4 +439,44 @@ path {
   .heading-simplus {
     font-size: 12px;
   }
+
+  .text {
+    font-size: 25px;
+  }
+
+  .text-container {
+    width: 100%; 
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .partners-container {
+    width: 80%;
+  }
+
+  .main-container-partners {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .partners {
+    height: 60px;
+  }
+  
+  .partners-name {
+    font-size: 16px;
+  }
+
+  .partners-logos > img {
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .partners-container {
+    width: 95%;
+  }
 }
