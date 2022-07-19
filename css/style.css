@@ -125,6 +125,7 @@ path {
   width: 42%;
   height: auto;
   min-width: 300px;
+  max-width: 700px;
 }
 
 .text-image-container {
@@ -221,25 +222,18 @@ path {
   width: 200px;
 }
 
+#wpp {
+  font-size: 20px; 
+  color: black; 
+  font-weight: 100;
+}
+
 #container-simplus {
   width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-#simplus {
-  width: 18vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  outline: 1px solid var(--primary1);
-  border-radius: 10px;
-  font-size: 1.2vw;
 }
 
 .heading-simplus {
@@ -262,6 +256,13 @@ path {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.clients-white-label {
+  border-bottom: 10px solid var(--primary3); 
+  padding: 5px; 
+  color: var(--primary1); 
+  font-size: 50px;
 }
 
 .partners-container {
@@ -310,25 +311,37 @@ path {
 .contacts-name-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
   color: var(--primary3);
+  width: 100%;
+  text-align: center;
+  font-size: 30px !important;
 }
 
-.contacts-name-container > div {
-  width: 24vw;
-  text-align: center;
+.icons {
+  width: 50px;
 }
 
 .contacts-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contacts-content > div {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .contacts-content > #phone {
@@ -338,17 +351,25 @@ path {
   justify-content: center;
 }
 
-.contacts-content > div, .contacts-content > #phone > div {
+.contacts-content > div > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 24vw;
+  font-size: 20px;
 }
 
+#contacts {
+  flex-wrap: wrap;
+}
 
-
+.icon-selfSupply-container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*media queries*/
 
 @media (max-width: 1264px) {
@@ -420,11 +441,11 @@ path {
   }
 
   .header {
-    font-size: 3.2vw;
+    font-size: 14px;
   }
 
   .secondary-text{
-    font-size: 1rem;
+    font-size: 20px;
   }
 
   #strong  {
@@ -473,10 +494,39 @@ path {
   .partners-logos > img {
     min-width: 70px;
   }
+
+  .icon-selfSupply-container, .contacts-content {
+    width: 100%;
+  }
+
+  .clients-white-label {
+    border: 5px solid var(--primary1);
+    font-size: 30px;
+  }
+
+  #icon-selfSupply {
+    width: 300px;
+  }
+
+  #wpp {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 400px) {
   .partners-container {
     width: 95%;
+  }
+
+  .contacts-name-container {
+    font-size: 25px !important;
+  }
+
+  .contacts-content > div > div {
+    font-size: 15px;
+  }
+
+  .icons {
+    width: 40px;
   }
 }
