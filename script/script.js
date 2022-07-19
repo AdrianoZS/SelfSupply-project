@@ -1,44 +1,16 @@
-let xs = []
-let webScreenWidth = window.innerWidth;
-let TAM = 1250;
+window.onscroll = function () { scrollToTop() };
 
-if (webScreenWidth < 1300) {
-  for (var i = 0; i <= 1250; i++) {
-    xs.push(i)
-  }
-} else if (webScreenWidth < 1600) {
-  for (var i = 0; i <= 1750; i++) {
-    xs.push(i)
-  }
-} else {
-  for (var i = 0; i <= 2250; i++) {
-    xs.push(i)
-  }
+function scrollToTop() {
+    if (document.documentElement.scrollTop > 50) {
+      element = document.getElementsByClassName("scroll-event");
+      element[0].style.display = "flex";
+    } else {
+      element = document.getElementsByClassName("scroll-event");
+      element[0].style.display = "none";
+    }
 }
 
-let t = 0
-
-function animate() {
-  
-  let points = xs.map(x => {
-    
-    let y = 100 + 10 * Math.sin((x + t) / 10)
-    
-    return [x, y]
-  })
-  
-  let path = "M" + points.map(p => {
-    return p[0] + "," + p[1]
-  }).join(" L")
-
-  document.querySelector(".pathElement").setAttribute("d", path);
-  document.querySelector(".pathElement2").setAttribute("d", path);
-  document.querySelector(".pathElement3").setAttribute("d", path);
-  document.querySelector(".pathElement4").setAttribute("d", path);
-  document.querySelector(".pathElement5").setAttribute("d", path);
-  document.querySelector(".pathElement6").setAttribute("d", path);
-  t += 0.4
-  
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
-
-animate();
