@@ -222,6 +222,10 @@ path {
   width: 100px;
 }
 
+#wpp-img {
+  width: 40px;
+}
+
 #map-container-img {
   width: 200px;
 }
@@ -541,6 +545,10 @@ path {
   .scroll-event > img {
     width: 30px;
   } 
+
+  #wpp-img {
+    width: 30px;
+  }
 }
 
 @media (max-width: 400px) {
